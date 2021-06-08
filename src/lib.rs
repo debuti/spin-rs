@@ -59,6 +59,7 @@
 
 #[cfg(any(test, feature = "std"))]
 extern crate core;
+extern crate rp2040sync;
 
 #[cfg(feature = "barrier")]
 #[cfg_attr(docsrs, doc(cfg(feature = "barrier")))]

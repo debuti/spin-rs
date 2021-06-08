@@ -13,6 +13,7 @@ description = "Spin-based synchronization primitives"
 
 [dependencies]
 lock_api_crate = { package = "lock_api", version = "0.4", optional = true }
+rp2040sync = { path = "../rp2040sync" }
 
 [features]
 default = ["lock_api", "mutex", "spin_mutex", "rwlock", "once", "lazy", "barrier"]

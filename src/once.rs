@@ -3,10 +3,11 @@
 use core::{
     cell::UnsafeCell,
     mem::MaybeUninit,
-    sync::atomic::{AtomicUsize, Ordering},
+    sync::atomic::Ordering,
     marker::PhantomData,
     fmt,
 };
+use rp2040sync::sync::atomic::AtomicUsize;
 use crate::{RelaxStrategy, Spin};
 
 /// A primitive that provides lazy one-time initialization.
